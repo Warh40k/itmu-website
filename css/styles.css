@@ -1,0 +1,59 @@
+ul{
+    margin-right:9%;
+    display: inline-block;
+    white-space: nowrap;
+}
+.header{
+    margin-left:350px;
+}
+h1{
+    color: azure;
+    font-size:42px;
+}
+h2{
+    margin-top:0;
+}
+li{
+    margin: inherit;
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 24px;
+}
+.promotion {
+    margin-top:8%;
+    margin-left:18%;
+    text-align: left;
+}
+li+ul{
+    left:50%;
+}
+.start-screen{
+    text-align: left;
+    background-image: url("../resources/cosmos.png");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+p.textitem{
+    font-size:24px;
+    word-wrap: break-word;
+}
+div.pricing{
+    background:#11024B;
+}
+.textcols{
+}
+.textitem {
+    float: left;
+    width: 50%;
+    height: 500px;
+}
+body {
+    background-color: #09002B ;
+    text-align: center;
+    color: azure;
+    margin:0;
+    padding:0;
+}
