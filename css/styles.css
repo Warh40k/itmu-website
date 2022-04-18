@@ -6,6 +6,14 @@ ul{
 .header{
     margin-left:350px;
 }
+.pricing{
+    height:50vh;
+    padding: 5vh;
+}
+#strength{
+    background-color: #11024B;
+    padding:30px;
+}
 h1{
     color: azure;
     font-size:42px;
@@ -21,10 +29,22 @@ li{
     white-space: nowrap;
     font-size: 24px;
 }
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
 .promotion {
     margin-top:8%;
     margin-left:18%;
     text-align: left;
+}
+.promotion h1{
+    font-size:64px;
+}
+.promotion p{
+    word-wrap: break-word;
+    width: 800px;
+    font-size: 36px;
 }
 li+ul{
     left:50%;
@@ -36,26 +56,44 @@ li+ul{
     width: 100vw;
     height: 100vh;
 }
-p.textmain p.textside{
+.vacancy-screen{
+    text-align: left;
+    background-size: cover;
+    background-color: #1C0030;
+    width: 100vw;
+    height: 100vh;
+}
+p{
+    font-size: 24px;
+    margin:0;
+}
+.textmain p{
+    display:inline-block;
+    margin-top:150px;
+    font-size:24px;
+    word-wrap: break-word;
+    line-height: 48px;
+    text-align: center;
+}
+p.textside{
     font-size:24px;
     word-wrap: break-word;
 }
-div.pricing{
-    background:#11024B;
+#privacy{
 }
 .textcols{
-    white-space: normal;
     overflow: hidden;
 }
 .textmain {
-    float: left;
+    display:inline-block;
+    height:530px;
     width: 50%;
-    height:550px;
 }
 .textside {
     float: right;
+    height: 530px;
+    vertical-align: middle;
     width: 50%;
-    height:550px;
 }
 .footitem
 {
@@ -67,6 +105,17 @@ div.pricing{
 .footitem:first-child
 {
     margin-left:0px;
+}
+.footer{
+    background-color: #11024B;
+}
+.footer h3{
+    font-size:20px;
+}
+.footer p{
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
 }
 body {
     background-color: #09002B ;
