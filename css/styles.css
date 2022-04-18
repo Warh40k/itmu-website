@@ -33,6 +33,21 @@ a{
     text-decoration: none;
     color: #FFFFFF;
 }
+#employees{
+    width:750px;
+    height: 450px;
+    margin-right:8vw;
+    float:right;
+}
+#vacancy{
+    white-space: normal; 
+    display:block;
+    text-align: right;
+    list-style:armenian;
+}
+#vacancies{
+    height: 500px;
+}
 .promotion {
     margin-top:8%;
     margin-left:18%;
@@ -40,11 +55,15 @@ a{
 }
 .promotion h1{
     font-size:64px;
+    font-style: oblique;
+    background-color: darkslateblue;
+    width: fit-content;
 }
 .promotion p{
     word-wrap: break-word;
     width: 800px;
     font-size: 36px;
+    background-color: darkslateblue;
 }
 li+ul{
     left:50%;
@@ -58,8 +77,8 @@ li+ul{
 }
 .vacancy-screen{
     text-align: left;
+    background: url("../resources/astronaut.jpg");
     background-size: cover;
-    background-color: #1C0030;
     width: 100vw;
     height: 100vh;
 }
@@ -123,4 +142,5 @@ body {
     color: azure;
     margin:0;
     padding:0;
+    overflow-x: hidden;
 }
