@@ -34,8 +34,8 @@ a{
     color: #FFFFFF;
 }
 #employees{
-    width:750px;
-    height: 450px;
+    width:640px;
+    height: 335px;
     margin-right:8vw;
     float:right;
 }
@@ -70,14 +70,6 @@ li+ul{
 }
 .start-screen{
     text-align: left;
-    background-image: url("../resources/cosmos.png");
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-}
-.vacancy-screen{
-    text-align: left;
-    background: url("../resources/astronaut.jpg");
     background-size: cover;
     width: 100vw;
     height: 100vh;
