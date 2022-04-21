@@ -1,8 +1,12 @@
-ul{
+.header ul{
     margin-right:9%;
     padding: 0%;
     display: inline-block;
     white-space: nowrap;
+}
+ul{
+    display: block;
+    white-space: normal;
 }
 .header{
     text-align: center;
@@ -11,10 +15,10 @@ ul{
 table{
     display:block;
     text-align: center;
-    margin:20px auto;
+    margin:auto auto;
 }
 .pricing{
-    height:50vh;
+    height: max-content;
     padding: 5vh;
 }
 #strength{
@@ -29,7 +33,7 @@ h2{
     margin-top:0px;
 }
 li{
-    margin: inherit;
+    margin-right: inherit;
     display: inline-block;
     list-style: none;
     vertical-align: middle;
@@ -41,8 +45,8 @@ a{
     color: #FFFFFF;
 }
 #employees{
-    width:640px;
-    height: 335px;
+    width: 540px;
+    height: 20%;
     margin-right:8vw;
     float:right;
 }
@@ -50,13 +54,16 @@ a{
     white-space: normal; 
     display:block;
     text-align: right;
-    list-style:armenian;
+    width: max-content;
 }
 #vacancies{
-    height: 500px;
+    height: max-content;
+    margin-bottom: 10%;
+    margin-top:3%;
+    width:100%;
 }
 .promotion {
-    margin-top:8%;
+    margin-top:5vh;
     margin-left:18%;
     text-align: left;
 }
@@ -84,7 +91,7 @@ li+ul{
 .start-screen{
     text-align: left;
     background-size: cover;
-    overflow-x:scroll;
+    overflow-x: visible;
     text-align: center;
     width: 100vw;
     height: 100vh;
@@ -108,8 +115,6 @@ p{
 p.textside{
     font-size:24px;
     word-wrap: break-word;
-}
-#privacy{
 }
 .textcols{
     overflow: hidden;
