@@ -17,6 +17,29 @@ table{
     text-align: center;
     margin:auto auto;
 }
+#form_promotion{
+    background-color: darkslateblue;
+    padding-top:5%;
+    padding-bottom:5%;
+}
+#form_promotion img{
+    margin-top:1%;
+}
+textarea{
+    display:block;
+    margin:auto;
+}
+label{
+    display: block;
+}
+form div{
+    margin:2%;
+}
+form{
+    margin-left:30%;
+    text-align: left;
+    padding:2%;
+}
 .pricing{
     height: max-content;
     padding: 5vh;

@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>Alien Hosting</title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+    <div class="start-screen" style="background-image: url('../resources/services4.jpg');">
+        <div class="header" >
+            <ul>
+                <li><a href="main.html">Главное</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="vacancy.html">Вакансии</a></li>
+                <li><a href="main.html"><img src="resources/logo.png" alt=""></a></li>
+                <ul class="social">
+                    <li><img src="resources/facebook_logo.png" alt=""></li>
+                    <li><img src="resources/insta_logo.png" alt=""></li>
+                    <li><img src="resources/login_button.png" alt=""></li>
+                </ul>
+            </ul>
+        </div> 
+        <div class="promotion">
+            <h1>Форма обратной связи</h1>
+            <p>Оставь свой отзыв о наших продуктах<br>Помоги стать нам лучше!</p>
+            <h3><img src="resources/more.png" alt=""></h3>
+        </div>
+    </div>
+    <div>
+        <form action="/survey" method="POST">
+            <div>
+                <label>Имя</label>
+                <input type="text" placeholder="Введите своё имя">
+            </div>
+            <div>
+                <label>Пол</label>
+                <label>
+                    <input type="radio" name="gender">
+                    Мужской
+                </label>
+                <label>
+                    <input type="radio" name="gender">
+                    Женский
+                </label>
+            </div>
+            <div>
+                <label>Страна проживания</label>
+                <select>
+                    <option>Россия</option>
+                    <option>Беларусь</option>
+                    <option>Украина</option>
+                    <option>Польша</option>
+                    <option>Другое</option>
+                </select>
+            </div>    
+            <div>
+                <label>Возраст</label>
+                <input type="number">
+            </div>
+            <div>
+                <label>Как Вы узнали о нашем сервисе</label>
+                <select>
+                    <option>Через поисковую систему</option>
+                    <option>Рекламный баннер</option>
+                    <option>Видео-интеграция</option>
+                    <option>Реклама по ТВ</option>
+                    <option>Друзья/Коллеги/Знакомые</option>
+                    <option>Блогеры</option>
+                </select>
+            </div>
+            <div>
+                <label>Какой тариф Вы используете</label>
+                <select>
+                    <option>Стартовый</option>
+                    <option>Стандартный</option>
+                    <option>Премиум</option>
+                </select>
+            </div>
+            <div>
+                <label>Почему вы выбрали именно этот тариф?</label>
+                <label>
+                    <input type="checkbox" name="tariff">
+                    Необходимый функционал
+                </label>
+                <label>
+                    <input type="checkbox" name="tariff">
+                    Низкая стоимость
+                </label>
+                <label>
+                    <input type="checkbox" name="tariff">
+                    Качественная техподдержка
+                </label>
+                <label>
+                    <input type="checkbox" name="tariff">
+                    Другое
+                </label>
+            </div>
+            <div>
+                <label>Насколько Вы удовлетворены работой данного тарифа?</label>
+                <label>
+                    <input type="radio" name="nraitsa">
+                    0
+                </label>
+                <label>
+                    <input type="radio" name="nraitsa">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="nraitsa">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="nraitsa">
+                    3
+                </label>
+                <label>
+                    <input type="radio" name="nraitsa">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="nraitsa">
+                    5
+                </label>
+            </div>
+            <div>
+                <label>Пояснения (опционально)</label>
+                <textarea></textarea>
+            </div>
+            <div>
+                <label>Насколько вероятно, что Вы будете рекомендовать данный тариф своим знакомым?</label>
+                <label>
+                    <input type="radio" name="recommend">
+                    0
+                </label>
+                <label>
+                    <input type="radio" name="recommend">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="recommend">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="recommend">
+                    3
+                </label>
+                <label>
+                    <input type="radio" name="recommend">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="recommend">
+                    5
+                </label>
+            </div>
+            <div>
+                <label>Какие функции вы хотите увидеть в нашем сервисе</label>
+                <label>
+                    <input type="checkbox" name="function">
+                    Пробный период для тарифа "Премиум"
+                </label>
+                <label>
+                    <input type="checkbox" name="function">
+                    Дополнительные опции, которые не входят в текущий состав тарифа
+                </label>
+                <label>
+                    <input type="checkbox" name="function">
+                    Новые способы оплаты (кредит, криптовалюты и др.)
+                </label>
+                <label>
+                    <input type="checkbox" name="function">
+                    Собственный лицевой счёт для оплаты "PayAsYouGo" услуг 
+                </label>
+                <label>
+                    <input type="checkbox" name="function">
+                    Другое
+                </label>
+
+            <div>
+                
+            </div>
+
+        </form>
+    </div>
+    <div style="background-color:#11024B">
+        <div class="footer">
+            <div class=footitem>
+                <h3>Навигация</h3>
+                <p>Главная</p>
+                <p>Статьи</p>
+                <p>Вакансии</p>
+            </div>
+            <div class="footitem">
+                <h3>Мы в социальных сетях</h3>
+                <p>Instagram</p>
+                <p>Facebook</p>
+                <p>Вконтакте</p>
+            </div>
+            <div class="footitem">
+                <h3>Полезные ссылки</h3>
+                <p>Политика конфиденциальности</p>
+                <p>Условия использования</p>
+                <p>Политика обмена и возрата</p>
+            </div>
+            <div class="footitem">
+                <h3>Информация</h3>
+                <p>О нас</p>
+                <p>Контакты</p>
+                <p>Блог</p>
+                <p>FAQ</p>
+            </div>
+    </div>
+    <img src="resources/logo2.png" style="display: inline;">
+    <p>Copyright 2021 © All right reserved</p>
+</body>
