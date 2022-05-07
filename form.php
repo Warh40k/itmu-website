@@ -1,8 +1,11 @@
 <?php 
-$conn = mysqli_connect('localhost', 'nikita', '252800', 'alien') or die('Connection failed: ' . $conn->connect_error);
-echo 'Success connection';
+echo $_POST['nraitsa'];
+$conn = mysqli_connect('localhost', 'nikita', '252800nz', 'alien') or die('Connection failed: ' . $conn->connect_error);
+echo 'Success connection<br>';
 
-if (isset($_POST["name"])) {
-    echo('<p>Data succesfully inserted in table</p>');
+print_r($_POST) . "<br><br>";
+foreach($_POST as $value) {
+    echo $value;
 }
+
 ?>

@@ -35,18 +35,12 @@
             </div>
             <div>
                 <label>2.Пол</label>
-                <label>
-                    <input type="radio" name="gender">
-                    Мужской
-                </label>
-                <label>
-                    <input type="radio" name="gender">
-                    Женский
-                </label>
+                <label> <input type="radio" name="gender" value="мужской"> Мужской </label>
+                <label> <input type="radio" name="gender" value="женский"> Женский </label>
             </div>
             <div>
                 <label>3.Страна проживания</label>
-                <select>
+                <select name="country">
                     <option>Россия</option>
                     <option>Беларусь</option>
                     <option>Украина</option>
@@ -60,7 +54,7 @@
             </div>
             <div>
                 <label>5.Как Вы узнали о нашем сервисе</label>
-                <select>
+                <select name="source">
                     <option>Через поисковую систему</option>
                     <option>Рекламный баннер</option>
                     <option>Видео-интеграция</option>
@@ -71,7 +65,7 @@
             </div>
             <div>
                 <label>6.Какой тариф Вы используете</label>
-                <select>
+                <select name="tariff_choice">
                     <option>Стартовый</option>
                     <option>Стандартный</option>
                     <option>Премиум</option>
@@ -80,46 +74,46 @@
             <div>
                 <label>7.Почему вы выбрали именно этот тариф?</label>
                 <label>
-                    <input type="checkbox" name="tariff">
+                    <input type="checkbox" name="reasons[]" value="необходимый функционал">
                     Необходимый функционал
                 </label>
                 <label>
-                    <input type="checkbox" name="tariff">
+                    <input type="checkbox" name="reasons[]" value="низкая стоимость">
                     Низкая стоимость
                 </label>
                 <label>
-                    <input type="checkbox" name="tariff">
+                    <input type="checkbox" name="reasons[]" value="качественная техподдержка">
                     Качественная техподдержка
                 </label>
                 <label>
-                    <input type="checkbox" name="tariff">
+                    <input type="checkbox" name="reasons[]" value="другое">
                     Другое
                 </label>
             </div>
             <div>
                 <label>8.Насколько Вы удовлетворены работой данного тарифа?</label>
                 <label>
-                    <input type="radio" name="nraitsa">
+                    <input type="radio" name="nraitsa" value="0">
                     0
                 </label>
                 <label>
-                    <input type="radio" name="nraitsa">
+                    <input type="radio" name="nraitsa" value="1">
                     1
                 </label>
                 <label>
-                    <input type="radio" name="nraitsa">
+                    <input type="radio" name="nraitsa" value="2">
                     2
                 </label>
                 <label>
-                    <input type="radio" name="nraitsa">
+                    <input type="radio" name="nraitsa" value="3">
                     3
                 </label>
                 <label>
-                    <input type="radio" name="nraitsa">
+                    <input type="radio" name="nraitsa" value="4">
                     4
                 </label>
                 <label>
-                    <input type="radio" name="nraitsa">
+                    <input type="radio" name="nraitsa" value="5">
                     5
                 </label>
             </div>
@@ -130,96 +124,96 @@
             <div>
                 <label>10.Насколько вероятно, что Вы будете рекомендовать данный тариф своим знакомым?</label>
                 <label>
-                    <input type="radio" name="recommend">
+                    <input type="radio" name="recommend" value="0">
                     0
                 </label>
                 <label>
-                    <input type="radio" name="recommend">
+                    <input type="radio" name="recommend" value="1">
                     1
                 </label>
                 <label>
-                    <input type="radio" name="recommend">
+                    <input type="radio" name="recommend" value="2">
                     2
                 </label>
                 <label>
-                    <input type="radio" name="recommend">
+                    <input type="radio" name="recommend" value="3">
                     3
                 </label>
                 <label>
-                    <input type="radio" name="recommend">
+                    <input type="radio" name="recommend" value="4">
                     4
                 </label>
                 <label>
-                    <input type="radio" name="recommend">
+                    <input type="radio" name="recommend" value="5">
                     5
                 </label>
             </div>
             <div>
                 <label>11.Какие функции вы хотите увидеть в нашем сервисе</label>
                 <label>
-                    <input type="checkbox" name="function">
+                    <input type="checkbox" name="function[]" value="пробный период для тарифа Премиум">
                     Пробный период для тарифа "Премиум"
                 </label>
                 <label>
-                    <input type="checkbox" name="function">
+                    <input type="checkbox" name="function[]" value="дополнительные опции, которые не входят в текущий состав тариф">
                     Дополнительные опции, которые не входят в текущий состав тарифа
                 </label>
                 <label>
-                    <input type="checkbox" name="function">
+                    <input type="checkbox" name="function[]" value="новые способы оплаты (кредит, криптовалюты и др)">
                     Новые способы оплаты (кредит, криптовалюты и др.)
                 </label>
                 <label>
-                    <input type="checkbox" name="function">
+                    <input type="checkbox" name="function[]" value="cобственный лицевой счёт для оплаты PayAsYouGo услуг">
                     Собственный лицевой счёт для оплаты "PayAsYouGo" услуг 
                 </label>
                 <label>
-                    <input type="checkbox" name="function">
+                    <input type="checkbox" name="function[]" value="другое">
                     Другое
                 </label>
             </div>
             <div>
                 <label>12.Оцените дизайн сайта</label>
                 <label>
-                    <input type="radio" name="design">
+                    <input type="radio" name="design" value="0">
                     0
                 </label>
                 <label>
-                    <input type="radio" name="design">
+                    <input type="radio" name="design" value="1">
                     1
                 </label>
                 <label>
-                    <input type="radio" name="design">
+                    <input type="radio" name="design" value="2">
                     2
                 </label>
                 <label>
-                    <input type="radio" name="design">
+                    <input type="radio" name="design" value="3">
                     3
                 </label>
                 <label>
-                    <input type="radio" name="design">
+                    <input type="radio" name="design" value="4">
                     4
                 </label>
                 <label>
-                    <input type="radio" name="design">
+                    <input type="radio" name="design" value="5">
                     5
                 </label>  
             </div>
             <div>
                 <label>13.Какие характеристики сайта вы считаете наиболее важными (не более двух)</label>
                 <label>
-                    <input type="checkbox" name="function">
+                    <input type="checkbox" name="characteristics[]" value="скорость загрузки">
                     Скорость загрузки;
                 </label>
                 <label>
-                    <input type="checkbox" name="function">
+                    <input type="checkbox" name="characteristics[]" value="доступность круглое время суток, без длительных перебоев в работе">
                     Доступность круглое время суток, без длительных перебоев в работе;
                 </label>
                 <label>
-                    <input type="checkbox" name="function">
+                    <input type="checkbox" name="characteristics[]" value="понятное и структурированное изложение информации">
                     Понятное и структурированное изложение информации;
                 </label>
                 <label>
-                    <input type="checkbox" name="function">
+                    <input type="checkbox" name="characteristics[]" value="другое">
                     Другое.
                 </label>
             </div>
@@ -234,23 +228,23 @@
             <div>
                 <label>16.Слышали ли вы нашу рекламу за последний месяц</label>
                 <label>
-                    <input type="radio" name="advert">
+                    <input type="radio" name="advert" value="да, несколько раз">
                     Да, несколько раз;
                 </label>
                 <label>
-                    <input type="radio" name="advert">
+                    <input type="radio" name="advert" value="да, один раз">
                     Да, один раз;
                 </label>
                 <label>
-                    <input type="radio" name="advert">
+                    <input type="radio" name="advert" value="да, но более месяца назад">
                     Да, но более месяца назад;
                 </label>
                 <label>
-                    <input type="radio" name="advert">
+                    <input type="radio" name="advert" value="нет">
                     Нет
                 </label>
+                <input type="submit"></input>
             </div>
-            <button>Отправить</button>
         </form>
     </div>
     <div style="background-color:#11024B">
