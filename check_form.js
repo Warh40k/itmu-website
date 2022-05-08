@@ -1,8 +1,13 @@
 function checkIt(){
-    let arr = new Array();
-	var t0=document.getElementById(' fio ').value;
+    let inputs = document.getElementsByTagName('input');
+    let selects = document.getElementsByTagName('select');
     
-	if (t0 == "") {
-		alert("Вы не указали свое имя!"); 
-		return false;            }
+    for (var i=0; i<inputs.length - 1;i++ ) {
+        if (inputs[i].value == ""){
+            alert("Ошибка: не все поля были заполнены");
+            return false;
+        }
+        
+    }
+    
 return true;}
