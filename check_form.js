@@ -6,15 +6,18 @@ function checkIt(){
             ischecked = false;
             radios = document.getElementsByName(inputs[i].name)
             for (var j=0; j< radios.length; j++) {
-                if (radios[j].checked)
+                if (radios[j].checked){
                     ischecked = true;
+                    break;
+                }
             }
             if (ischecked == false) {
                 alert("Ошибка: не все поля были заполнены");
                 return false;
             }
+            i += radios.length - 1;
         }
-        if (inputs[i].value == ""){
+        else if (inputs[i].value == ""){
             alert("Ошибка: не все поля были заполнены");
             return false;
         }
