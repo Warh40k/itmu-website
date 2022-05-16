@@ -13,9 +13,11 @@ ul{
     margin-right:17%;
 }
 table{
-    display:block;
-    text-align: center;
-    margin:auto auto;
+    border: 2px double white; 
+}
+td, th {
+    padding: 5px;
+    border: 2px solid white;
 }
 #form_promotion{
     background-color: darkslateblue;
