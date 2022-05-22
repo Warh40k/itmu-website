@@ -44,20 +44,26 @@ while ($result = mysqli_fetch_array($sql)) {
     echo "</tr>";
 }
 echo "</table>";
-echo "<h1>Коэффициенты</h1><p>Коэффициент корреляции возраста респондента и предельной стоимости затрат на тариф \"Премиум\"";
+echo "<h1>Коэффициенты</h1><p>Коэффициент корреляции возраста респондента и предельной стоимости затрат по тарифам";
 
-$sql = mysqli_query($conn, "SELECT age,max_price FROM survey WHERE tariff='Премиум'");
+$tariffs = array("Стартовый", "Стандартный", "Премиум");
 
-$age = array();
-$max_price = array();
+foreach($tariffs as $tariff){
 
-while ($result = mysqli_fetch_array($sql)) {
-    $age[] = $result[0];
-    $max_price[] = $result[1];
+    $sql = mysqli_query($conn, "SELECT age,max_price FROM survey WHERE tariff='$tariff'");
+
+    $age = array();
+    $max_price = array();
+
+    while ($result = mysqli_fetch_array($sql)) {
+        $age[] = $result[0];
+        $max_price[] = $result[1];
+    }
+
+    $pierson = Correlation::r($age,$max_price);
+    echo "<p> Коэффициент корреляции Пирсона для тарифа '$tariff' равен " . $pierson . "</p>";
+
 }
-
-$pierson = Correlation::r($age,$max_price);
-echo "<p> Коэффициент корреляции Пирсона равен " . $pierson . "</p>";
 
 ?>
 <?php include ("template/footer.php") ?>
